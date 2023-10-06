@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="t5.css" rel="stylesheet">
+  <script type="module" src="t5.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  
+  <h2 class="otsikko">Student restaurants</h2>
+  <h1 class="otsikko">Weekly and daily menus</h1>
+  <div class="support">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbox-label">
+      <i id="icon_sun" class="material-icons" >wb_sunny</i>
+      <i id="icon_moon" class="material-icons">brightness_3</i>
+      <span class="ball"></span>
+    </label>
+  </div>
+
+  <div id="napit">
+    <button class="button-1" role="button" id="sodexo">Sodexo</button>
+    <button class="button-1" role="button" id="compass">Compass group</button>
+    <button class="button-1" role="button" id="reset">Show all</button>
+    
+  </div>
+  <table>
+    <tr class="lista">
+      <th>Name</th>
+      <th>Address</th>
+    </tr>
+    <!-- add restaurants here -->
+  </table>
+  <!-- modal -->
+  <dialog>
+    
+    <!-- add restaurant info here when restaurant is clicked -->
+    <div id="restaurant-data"><div id="menuContent"></div></div>
+   
+
+  </dialog>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+*{
+  --rich-black: #0c1618ff;
+  --Sage: #b6c59a;
+  --White: #d7d7d7;
+  --Light-beige: #c1cb68;
+  --light:  #cecdcd;
+  --Beige: #20323e;
+}
+
+
+
+body {
+  background: var(--Sage);
+  font-family: 'Rubik', sans-serif;
+  margin: auto;
+  padding: 0;
+  width: 500px;
+}
+
+dialog{
+  background:  var(--light);
+  
+ 
+}
+
+table {
+  background: var(--Sage);
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  background: var(--White);
+  border-bottom: 1px solid var(--White);
+  color: var(--rich-black);
+  font-weight: normal;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  background: var(--light);
+  border-bottom: 2px solid var(--Sage);
+  padding: 0.5em 1em;
+  color: var(--rich-black);
+  
+}
+
+.lista{
+  background: var(--Beige);
+  color: #FFFFFF;
+}
+
+.highlight {
+  background: var(--Light-beige);
+  color: var(--rich-black);
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.otsikko{
+  color: var(--rich-black);
+  font-weight: 500;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h3{
+  color: var(--rich-black);
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+h2{
+  color: var(--rich-black);
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1{
+  margin-top: 0%;
+  padding-bottom: 10px;
+}
+
+p{
+  color: var(--rich-black);
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.paiva{
+  color: var(--Light-beige);
+  background-color: var(--rich-black);
+}
+
+
+#day{
+  color: var(--rich-black);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+
+.button-1 {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: var(--Beige);
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 14px 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 200ms,background 200ms;
+  margin-bottom: 20px;
+}
+
+.button-1:hover{
+    transform: translateY(-2px);
+}
+
+.button-2{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: var(--Light-beige);
+  color: var(--rich-black);
+  border-radius: 8px;
+  padding: 14px 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 200ms,background 200ms;
+  margin-bottom: 20px;
+}
+
+.button-2:hover{
+    transform: translateY(-2px);
+    
+}
+
+/* darkmode switch */
+
+body.dark {background-color: var(--rich-black);} 
+body.dark .otsikko {color: var(--Sage);}
+body.dark .paiva  {background-color: var(--rich-black);color: var(--Light-beige);}
+body.dark td  {background-color: var(--Beige);color: var(--White); border-bottom: 2px solid var(--Light-beige);}
+body.dark dialog {background: var(--Beige); color: var(--White);}
+body.dark h3 {color: var(--White);}
+body.dark h1 {color: var(--White);}
+body.dark p {color: var(--White);}
+body.dark .checkbox-label {background-color: var(--Beige);}
+body.dark .button-1 {background-color: var(--Light-beige);color: var(--rich-black);}
+
+
+
+.checkbox {
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+
+
+}
+
+.checkbox-label {
+  background-color: var(--rich-black);
+  width: 36px;
+  height: 19px;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left:2px;
+  top: 1px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+#icon_sun{
+  margin: 2px;
+  font-size:15px;
+  color:#f39c12;
+}
+#icon_moon{
+  margin: 2px;
+  font-size:15px; 
+  color:#f3c57b;
+
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(15px);
+}
+
+.support {
+  margin: 0%;
+	position: absolute;
+  margin: 5px;
+  top: 105px;
+}
+
+
+
+/* media rules*/
+
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    
+  }
+}
+
+
+
+
+
