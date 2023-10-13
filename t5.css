@@ -54,16 +54,19 @@ td {
   
 }
 
+td:hover{
+  color: gray;
+  
+}
+
 .lista{
   background: var(--Beige);
   color: #FFFFFF;
 }
 
 .highlight {
-  background: var(--Light-beige);
-  color: var(--rich-black);
+
   font-weight: bold;
-  font-size: 20px;
   
 }
 
@@ -92,7 +95,7 @@ h2{
 }
 h1{
   margin-top: 0%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 p{
@@ -155,6 +158,10 @@ p{
     
 }
 
+#sulje{
+  float: right;
+}
+
 /* darkmode switch */
 
 body.dark {background-color: var(--rich-black);} 
@@ -167,6 +174,7 @@ body.dark h1 {color: var(--White);}
 body.dark p {color: var(--White);}
 body.dark .checkbox-label {background-color: var(--Beige);}
 body.dark .button-1 {background-color: var(--Light-beige);color: var(--rich-black);}
+body.dark td:hover {color: var(--Light-beige);}
 
 
 
@@ -221,6 +229,46 @@ body.dark .button-1 {background-color: var(--Light-beige);color: var(--rich-blac
 	position: absolute;
   margin: 5px;
   top: 105px;
+}
+
+
+
+.modal_week {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
