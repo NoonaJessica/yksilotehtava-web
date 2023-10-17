@@ -51,12 +51,11 @@ td {
   border-bottom: 2px solid var(--Sage);
   padding: 0.5em 1em;
   color: var(--rich-black);
-  
 }
+
 
 td:hover{
   color: gray;
-  
 }
 
 .lista{
@@ -65,7 +64,6 @@ td:hover{
 }
 
 .highlight {
-
   font-weight: bold;
   
 }

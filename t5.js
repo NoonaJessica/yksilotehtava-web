@@ -43,16 +43,28 @@ const createTable = restaurants => {
         document.getElementById("button2");
         button2.addEventListener("click", ShowDay);
 
+        //const button3 =
+        //document.getElementById("button3");
+        //button3.addEventListener("click", ShowWeek);
+
         const sulje = document.getElementById('sulje')
         sulje.addEventListener('click', () => {
           modal.close();
         });
-
+        //close weekly and open daily menu
         function ShowDay() {
           modal.removeChild(document.getElementById("viikko"))
+          modal.removeChild(document.getElementById("button2"))
           const menuHtml = showTodaysMenu (restaurant, menuday);
           modal.insertAdjacentHTML('beforeend', menuHtml); 
         }
+
+        //function ShowWeek() {
+         // modal.removeChild(document.getElementById("paiva"))
+          //modal.removeChild(document.getElementById("button3"))
+          //const menuHtml = showTodaysMenu (restaurant, menu);
+          //modal.insertAdjacentHTML('beforeend', menuHtml); 
+        //}
 
         modal.showModal();
       } catch (error) {
@@ -66,13 +78,6 @@ const createTable = restaurants => {
 const error = err => {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 };
-
-
-
-
-
-
-
 
 
 const success = async pos => {

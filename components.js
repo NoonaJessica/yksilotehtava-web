@@ -1,6 +1,7 @@
 const restaurantRow = restaurant => {
   const {name, address, company} = restaurant;
   const tr = document.createElement('tr');
+
   const nameCell = document.createElement('td');
   nameCell.innerText = name;
   const addressCell = document.createElement('td');
@@ -12,6 +13,8 @@ const restaurantRow = restaurant => {
   //tr.appendChild(companyCell);
   return tr;
 };
+
+
 
 
 
@@ -62,11 +65,13 @@ const restaurantModal = (restaurant, menu) => {
   return html;
 };
 
+//<button class="button-2" id="button3" >Show weekly menu</button>  
 
 const showTodaysMenu  = (restaurant, menuday) => {
   const {name, address, city, postalCode, phone, company} = restaurant;
   let html = `
-  <table>
+  
+  <table id="paiva" >
     <tr>
       <th id="day">Course</th>
       <th id="day">Diet</th>
