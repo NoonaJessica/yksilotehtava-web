@@ -34,7 +34,6 @@ const createTable = restaurants => {
         const menuday = await fetchData(
           apiUrl + `/restaurants/daily/${restaurant._id}/fi`);
         console.log(menuday);
-
           
         const menuHtml = restaurantModal(restaurant, menu);
         modal.insertAdjacentHTML('beforeend', menuHtml);
@@ -42,10 +41,6 @@ const createTable = restaurants => {
         const button2 =
         document.getElementById("button2");
         button2.addEventListener("click", ShowDay);
-
-        //const button3 =
-        //document.getElementById("button3");
-        //button3.addEventListener("click", ShowWeek);
 
         const sulje = document.getElementById('sulje')
         sulje.addEventListener('click', () => {
@@ -58,13 +53,6 @@ const createTable = restaurants => {
           const menuHtml = showTodaysMenu (restaurant, menuday);
           modal.insertAdjacentHTML('beforeend', menuHtml); 
         }
-
-        //function ShowWeek() {
-         // modal.removeChild(document.getElementById("paiva"))
-          //modal.removeChild(document.getElementById("button3"))
-          //const menuHtml = showTodaysMenu (restaurant, menu);
-          //modal.insertAdjacentHTML('beforeend', menuHtml); 
-        //}
 
         modal.showModal();
       } catch (error) {
